@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/tailwind.css" />
+
+    <style>
+      * {
+        font-family: "Lobster", cursive;
+        background-color: #204051;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="js/vue.js"></script>
+
+    <div id="app" class="mx-12">
+      <div class="mx-4 my-4 ">
+        <h2 class="mx-4 mb-3 text-white">Text goes here</h2>
+        <input
+          
+          
+        v-model="name"
+          class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-6 px-6 block w-full appearance-none leading-normal"
+          type="text"
+          id="input-one"
+          placeholder="text goes here"
+        />
+        <button
+          onclick="toUpperCase()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-3"
+        >
+          All Uppercase
+        </button>
+        <button
+          onclick="toLowerCase()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-3"
+        >
+          All Lowercase
+        </button>
+        <button
+          onclick="titleCase()"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-3"
+        >
+          All First Character to Uppercase
+        </button>
+        <input
+          id="text-output"
+          v-model="name"
+          class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-6 px-6 block w-full appearance-none leading-normal mt-3"
+          type="text"
+          placeholder="text goes here"
+        />
+      </div>
+    </div>
+ 
+       
+    <script src="/js/script.js"></script>
+  </body>
+</html>
